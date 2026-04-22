@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HubChain — El hub de la Inteligencia Artificial</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">Hub<span>Chain</span></div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')"     id="nav-home"     class="active">Inicio</a></li>
+    <li><a onclick="showPage('research')" id="nav-research">Investigación</a></li>
+    <li><a onclick="showPage('about')"    id="nav-about">Nosotros</a></li>
+    <li><a onclick="showPage('team')"     id="nav-team">Equipo</a></li>
+  <!--<li><a onclick="showPage('contact')"  id="nav-contact">Contacto</a></li>-->
+  </ul>
+  <!--<button class="nav-cta" onclick="showPage('contact')">Unirse al Hub</button>-->
+</nav>
+<div id="intro-loader" class="intro-loader">
+  <div class="intro-content">
+      <div class="scene">
+ 
+        <div class="nodes">
+          <div class="node"></div>
+          <div class="node"></div>
+          <div class="node"></div>
+          <div class="node"></div>
+          <div class="node"></div>
+          <svg class="line-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <line x1="32"  y1="54"  x2="168" y2="30"  stroke="#4ecdc4" stroke-width="0.8" opacity="0.25"/>
+            <line x1="360" y1="90"  x2="168" y2="30"  stroke="#c9a227" stroke-width="0.8" opacity="0.25"/>
+            <line x1="32"  y1="54"  x2="56"  y2="236" stroke="#4ecdc4" stroke-width="0.8" opacity="0.2"/>
+            <line x1="360" y1="90"  x2="368" y2="246" stroke="#c9a227" stroke-width="0.8" opacity="0.2"/>
+          </svg>
+        </div>
+ 
+        <div class="logo">
+          <span class="teal">Hub</span><span class="teal">Ch</span><span class="gold">AI</span><span class="teal">n</span>
+        </div>
+ 
+        <div class="bar-wrap">
+          <div class="bar"></div>
+          <div class="dot-left"></div>
+          <div class="dot-right"></div>
+        </div>
+ 
+        <p class="tagline">Connecting the future</p>
+ 
+      </div>
+  </div>
+</div>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+  <div>
+      <video class="video active" autoplay muted loop>
+        <source src="videos/4354036-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+
+      <video class="video" autoplay muted loop>
+        <source src="videos/6153459-uhd_4096_2160_25fps.mp4" type="video/mp4">
+      </video>
+
+      <video class="video" autoplay muted loop>
+        <source src="videos/8328050-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+
+      <video class="video" autoplay muted loop>
+        <source src="videos/8762888-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+  </div>
+  
+  <div class="home-hero">
+    <div class="hero-caja">
+      <div class="hero-tag">HubChain — El Hub de la Inteligencia Artificial</div>
+      <h1>El <em>hub</em> donde la<br/>inteligencia artificial<br/>cobra vida</h1>
+      <p class="hero-desc">
+        Somos el centro donde investigadores, modelos y datos convergen
+        para construir la próxima generación de sistemas inteligentes,
+        abiertos y sin fronteras.
+      </p>
+      
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="showPage('research')">Ver Investigaciones</button>
+        <button class="btn-ghost"   onclick="showPage('team')">Conocer al equipo</button>
+      </div>
+    </div>
+
+    <div class="carta-carrusel">
+      <img src="images/conferencia1.png" alt="Carta 1" class="active">
+      <img src="images/register2.png" alt="Carta 2">
+      <img src="images/fondo5.png" alt="Carta 3">
+    </div>
+    
+  </div>
+
+  
+  <div class="stats-bar fade-in">
+    <!--  
+    <div class="stat"><span class="stat-num">48+</span><span class="stat-label">Papers Publicados</span></div>
+    <div class="stats-bar-divider"></div>
+    <div class="stat"><span class="stat-num">12</span><span class="stat-label">Investigadores</span></div>
+    <div class="stats-bar-divider"></div>
+    <div class="stat"><span class="stat-num">7</span><span class="stat-label">Años de Investigación</span></div>
+    <div class="stats-bar-divider"></div>
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Áreas de IA</span></div>
+    <div class="stats-bar-divider"></div>
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Alianzas Universitarias</span></div>
+    -->
+  </div>
+
+
+  <div class="home-intro fade-in">
+    <div class="home-intro-text">
+      <div class="section-tag">Sobre HubChain</div>
+      <h2>El <em>hub</em> de la inteligencia artificial</h2>
+      <p>HubChain es el punto de encuentro donde la inteligencia artificial deja de ser
+         una tecnología aislada y se convierte en una red viva de conocimiento, modelos
+         y personas.</p>
+      <p>Reunimos investigadores, herramientas y datos bajo un mismo nodo para que la IA
+         avance más rápido, de forma más abierta y con mayor impacto en el mundo real.</p>
+    </div>
+    <div class="home-intro-links">
+      <div class="section-tag">Navegación rápida</div>
+      <div class="intro-link-item" onclick="showPage('research')">
+        <span class="intro-link-title">Áreas de Investigación</span>
+        <span class="intro-link-arrow">→</span>
+      </div>
+      <div class="intro-link-item" onclick="showPage('research')">
+        <span class="intro-link-title">Publicaciones Recientes</span>
+        <span class="intro-link-arrow">→</span>
+      </div>
+      <div class="intro-link-item" onclick="showPage('about')">
+        <span class="intro-link-title">Historia y Misión</span>
+        <span class="intro-link-arrow">→</span>
+      </div>
+      <div class="intro-link-item" onclick="showPage('team')">
+        <span class="intro-link-title">Nuestro Equipo</span>
+        <span class="intro-link-arrow">→</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-highlights fade-in">
+    <div class="section-tag">Destacados recientes</div>
+    <h2>Lo último en <em>inteligencia artificial</em></h2>
+    <div class="highlights-grid">
+      <div class="highlight-card featured">
+        <a href="https://arxiv.org/abs/2402.06954" target="_blank">
+          <div class="highlight-tag">Paper destacado — 2024</div>
+          <div class="highlight-title"> OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning</div>
+          <div class="highlight-desc">Framework para entrenar LLMs de forma colaborativa y privada usando federated learning, con 7 algoritmos FL incluidos.</div>
+          <div class="highlight-meta">Rui Ye et al. · arXiv 2024 · IA &amp; Privacidad</div>
+        </a>
+      </div>
+      <div class="highlight-card">
+        <a href="https://github.com/HKUDS/AI-Researcher" target="_blank">
+          <div class="highlight-tag">Proyecto activo</div>
+          <div class="highlight-title">AI-Researcher: Autonomous Scientific Innovation — aceptado en NeurIPS 2025</div>
+          <div class="highlight-desc">Sistema multi-agente que automatiza todo el ciclo de investigación científica, desde la idea hasta la publicación del paper.</div>
+          <div class="highlight-meta">""· IA &amp; Neuro</div>
+        </a>
+      </div>
+      <div class="highlight-card">
+        <a href="https://aibusiness.com/generative-ai/the-new-open-source-ai-model-for-latin-america" target="_blank">
+          <div class="highlight-tag">Nuevo</div>
+          <div class="highlight-title">Latam-GPT — Primer modelo de IA open source de América Latina, lanzado por CENIA (Chile) en febrero 2026, con 30+ instituciones de 8 países.</div>
+          <div class="highlight-desc">Modelo entrenado con datos latinoamericanos en español y portugués, de acceso abierto para universidades y gobiernos.</div>
+          <div class="highlight-meta"> · LAN &amp; IA Modelos</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Hub<span>Chain</span></div>
+    <p class="footer-copy">© 2026 HubChain Lab. Todos los derechos reservados.</p>
+    <!--
+    <ul class="footer-links">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Papers</a></li>
+      <li><a href="#">Privacidad</a></li>
+    </ul>
+    -->
+  </footer>
+</div>
+
+
+<!-- RESEARCH -->
+<div id="page-research" class="page">
+  <div class="breadcrumb">HubChain <span class="breadcrumb-sep">/</span> <span>Investigación</span></div>
+  <div class="page-header">
+    <div class="contenedor-video">
+      <video class="video active" autoplay muted loop>
+        <source src="videos/4354036-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+
+      <video class="video" autoplay muted loop>
+        <source src="videos/6153459-uhd_4096_2160_25fps.mp4" type="video/mp4">
+      </video>
+
+      <video class="video" autoplay muted loop>
+        <source src="videos/8328050-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+
+      <video class="video" autoplay muted loop>
+        <source src="videos/8762888-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="page-header-tag">Áreas de Investigación en IA</div>
+    <h1>El <em>nodo central</em> del conocimiento en IA</h1>
+    <p>En HubChain conectamos líneas de investigación en inteligencia artificial para
+       resolver los desafíos más complejos del ecosistema digital actual.</p>
+  </div>
+
+  <div class="research-layout">
+    <div class="research-sidebar">
+      <div class="sidebar-label">Filtrar por área</div>
+      <div class="sidebar-filter">
+        <button class="filter-btn active">Todas las áreas</button>
+        <button class="filter-btn">Áreas Principales</button>
+        <button class="filter-btn">Áreas Emergentes</button>
+      </div>
+      <div class="sidebar-label">Tecnologías</div>
+      <div class="sidebar-filter">
+        <button class="filter-btn">Modelos de Lenguaje</button>
+        <button class="filter-btn">Zero-Knowledge</button>
+        <button class="filter-btn">Federated Learning</button>
+        <button class="filter-btn">Agentes IA</button>
+        <button class="filter-btn">Visión Artificial</button>
+        <button class="filter-btn">IA Generativa</button>
+      </div>
+    </div>
+
+    <div class="research-main">
+      <div class="research-grid fade-in">
+        <div class="research-card">
+          <div class="card-num">01 — Área Principal</div>
+          <div class="card-icon">⬡</div>
+          <div class="card-title">Modelos de Lenguaje (LLMs)</div>
+          <p class="card-desc">Investigación en arquitecturas de lenguaje de gran escala, alineamiento,
+            razonamiento y aplicaciones en entornos reales y verificables.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-num">02 — Área Principal</div>
+          <div class="card-icon">◈</div>
+          <div class="card-title">Privacidad en IA</div>
+          <p class="card-desc">Integración de técnicas de privacidad diferencial y pruebas ZK en pipelines
+            de inferencia para garantizar IA confiable y auditable.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-num">03 — Área Principal</div>
+          <div class="card-icon">⌬</div>
+          <div class="card-title">Aprendizaje Federado</div>
+          <p class="card-desc">Arquitecturas que permiten entrenamiento colaborativo sin centralizar
+            datos sensibles entre nodos distribuidos de la red.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-num">04 — Área Emergente</div>
+          <div class="card-icon">◎</div>
+          <div class="card-title">Agentes Autónomos</div>
+          <p class="card-desc">Sistemas de agentes IA capaces de razonar, planificar y ejecutar tareas
+            complejas de forma autónoma en entornos dinámicos.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-num">05 — Área Emergente</div>
+          <div class="card-icon">⟁</div>
+          <div class="card-title">IA Generativa</div>
+          <p class="card-desc">Modelos generativos multimodales para creación de contenido, síntesis de
+            datos y augmentación de conocimiento científico.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-num">06 — Área Emergente</div>
+          <div class="card-icon">⬟</div>
+          <div class="card-title">IA Explicable (XAI)</div>
+          <p class="card-desc">Técnicas para hacer los modelos de IA interpretables, transparentes y
+            auditables por humanos en contextos críticos de decisión.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="papers-section fade-in">
+    <div class="section-tag">Publicaciones</div>
+    <h2>Papers <em>recientes</em></h2>
+    <table class="papers-table">
+      <thead>
+        <tr><th>Título &amp; Autores</th><th>Área</th><th>Año</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="paper-title">ZK-Inference: Privacidad computacional verificable en modelos de lenguaje distribuidos</div><div class="paper-authors">James Kato, Valeria Mora</div></td>
+          <td><span class="paper-tag">Privacidad IA</span></td>
+          <td class="paper-year">2025</td>
+        </tr>
+        <tr>
+          <td><div class="paper-title">Federated Hub: Aprendizaje federado con coordinación centralizada mínima</div><div class="paper-authors">Dr. Carlos Ríos, Dra. Ana Luque</div></td>
+          <td><span class="paper-tag">Federated Learning</span></td>
+          <td class="paper-year">2025</td>
+        </tr>
+        <tr>
+          <td><div class="paper-title">Agentes LLM para razonamiento jurídico y toma de decisiones autónomas</div><div class="paper-authors">Valeria Mora, James Kato</div></td>
+          <td><span class="paper-tag">Agentes IA</span></td>
+          <td class="paper-year">2025</td>
+        </tr>
+        <tr>
+          <td><div class="paper-title">HubChain-XAI: Marco de explicabilidad para modelos de lenguaje en producción</div><div class="paper-authors">Dr. Carlos Ríos</div></td>
+          <td><span class="paper-tag">IA Explicable</span></td>
+          <td class="paper-year">2025</td>
+        </tr>
+        <tr>
+          <td><div class="paper-title">Modelos generativos para síntesis de datos científicos verificables</div><div class="paper-authors">Dra. Ana Luque, Valeria Mora</div></td>
+          <td><span class="paper-tag">IA Generativa</span></td>
+          <td class="paper-year">2025</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Hub<span>Chain</span></div>
+    <p class="footer-copy">© 2026 HubChain Lab. Todos los derechos reservados.</p>
+    <!--
+    <ul class="footer-links">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Papers</a></li>
+      <li><a href="#">Privacidad</a></li>
+    </ul>
+    -->
+  </footer>
+</div>
+
+
+<!-- ABOUT -->
+<div id="page-about" class="page">
+
+  <div class="breadcrumb">HubChain <span class="breadcrumb-sep">/</span> <span>Nosotros</span></div>
+  <div class="page-header">
+    <div class="page-header-tag">Sobre HubChain</div>
+    <h1>El <em>hub</em> donde la IA<br/>encuentra su centro</h1>
+    <p>HubChain nació para ser el nodo central donde investigadores, modelos y datos
+       convergen para construir una inteligencia artificial más abierta, ética y poderosa.</p>
+  </div>
+
+  <div class="about-layout fade-in">
+    <div class="about-left">
+      <div class="section-tag">Nuestra Misión</div>
+      <h2>El <em>hub</em> de la inteligencia artificial</h2>
+      <p>HubChain es el punto de encuentro donde la inteligencia artificial deja de ser
+         una tecnología aislada y se convierte en una red viva de conocimiento, modelos
+         y personas comprometidas con el avance abierto de la IA.</p>
+      <p>Reunimos investigadores, herramientas y datos bajo un mismo nodo para que la IA
+         avance más rápido, de forma más abierta y con mayor impacto en el mundo real.
+         Como todo hub, nuestra fuerza está en las conexiones.</p>
+      <div class="about-pillars">
+        <div class="pillar"><div class="pillar-dot"></div>Investigación de IA de acceso abierto y reproducible</div>
+        <div class="pillar"><div class="pillar-dot"></div>Colaboración entre investigadores, industria y academia</div>
+        <div class="pillar"><div class="pillar-dot"></div>Transferencia de modelos IA hacia aplicaciones reales</div>
+        <div class="pillar"><div class="pillar-dot"></div>Ética, transparencia y seguridad como principios base</div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="section-tag">Visión</div>
+      <h2>Conectando <em>inteligencia</em> sin fronteras</h2>
+      <p>Creemos que la inteligencia artificial es más poderosa cuando se construye en
+         comunidad. Un hub no es solo un punto central — es el lugar donde las ideas
+         se amplifican, se validan y se convierten en impacto.</p>
+      <p>Trabajamos con reguladores, universidades e industria para garantizar que los
+         avances en IA sean adoptados de forma ética y segura. Todos nuestros papers
+         y modelos son de acceso abierto.</p>
+      <p>En HubChain no solo investigamos — formamos a la próxima generación de
+         investigadores en IA que liderarán el cambio desde Latinoamérica.</p>
+    </div>
+  </div>
+
+  <div class="about-visual fade-in">
+    <div class="about-box about-box-main">
+      <div class="hex-grid">
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+        <div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div><div class="hex-dot"></div>
+      </div>
+    </div>
+    <div class="about-box about-box-accent"><span>2017</span><span>Fundación</span></div>
+  </div>
+
+  <div class="timeline fade-in">
+    <div class="section-tag">Historia</div>
+    <h2>Nuestra <em>trayectoria</em></h2>
+    <div class="timeline-items">
+      <div class="timeline-item">
+        <div class="timeline-year">2025</div>
+        <div class="timeline-title">Fundación de HubChain</div>
+        <div class="timeline-desc">El hub abre sus puertas en Lima con un equipo inicial de 4 investigadores
+          y la misión de convertir la IA en una red viva de conocimiento compartido.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Hub<span>Chain</span></div>
+    <p class="footer-copy">© 2026 HubChain Lab. Todos los derechos reservados.</p>
+    <!--
+    <ul class="footer-links">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Papers</a></li>
+      <li><a href="#">Privacidad</a></li>
+    </ul>
+    -->
+  </footer>
+</div>
+
+
+<!-- TEAM -->
+<div id="page-team" class="page">
+
+  <div class="breadcrumb">HubChain <span class="breadcrumb-sep">/</span> <span>Equipo</span></div>
+  <div class="page-header">
+    <div class="page-header-tag">El Equipo</div>
+    <h1>Las mentes detrás<br/>del <em>hub</em></h1>
+    <p>Un equipo interdisciplinario de investigadores, ingenieros y científicos de datos
+       unidos por la misión de hacer avanzar la IA desde HubChain.</p>
+  </div>
+
+  <div class="content-wide" style="padding-bottom:0;">
+    <div class="section-tag">Investigadores Principales</div>
+    <div class="team-grid fade-in">
+    
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/nhnery/" target="_blank">
+          <div class="team-avatar"><img src="images/henrry.jpg" alt="Henry Williams Gutierrez Vilca" class="avatar"></div>
+          <div class="team-name">Henry Williams Gutierrez Vilca</div>
+          <div class="team-role">Ingeniero en Sistemas y Desarrollador IA</div>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/jhordan-berrocal-cueto/" target="_blank">
+          <div class="team-avatar"><img src="images/jordan.jpg" alt="Jhordan Berrocal Cueto" class="avatar"></div>
+          <div class="team-name">Jhordan Berrocal Cueto</div>
+          <div class="team-role">Ingeniero Mecatrónico - PUCP e investigador</div>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/ronaldtoledo/" target="_blank">
+          <div class="team-avatar"><img src="images/ronald.jpg" alt="Ronald Toledo Mendoza" class="avatar"></div>
+          <div class="team-name">Ronald Toledo Mendoza</div>
+          <div class="team-role">Bachiller en Ingeniería Mecatrónica e investigador</div>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/mitzukodavis/" target="_blank">
+          <div class="team-avatar"><img src="images/Mitzuko.jpg" alt="Mitzuko Davis" class="avatar"></div>
+          <div class="team-name">Mitzuko Davis</div>
+          <div class="team-role">
+            Gestor de Innovación y Tecnología
+          </div>
+
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/andy-zevallos-yanqui-0a041b3a9/" target="_blank">
+          <div class="team-avatar">AJ</div>
+          <div class="team-name">Andy Jefferson Zevallos Yanqui</div>
+          <div class="team-role">
+            Ingeniero en Sistemas y Desarrollador web 
+          </div>
+
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/luis-angel-mogrovejo-ccorimanya-b8b52b378/?skipRedirect=true" target="_blank">
+          <div class="team-avatar"><img src="images/Luis.jpg" alt="Luis Angel Mogrovejo Ccorimanya" class="avatar"></div>
+          <div class="team-name">Luis Angel Mogrovejo Ccorimanya</div>
+          <div class="team-role">
+            Ingeniero en Sistemas
+          </div>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/angel-lenyn-cari-villa-5b5b5b5b/" target="_blank">
+          <div class="team-avatar"><img src="images/Angel.jpg" alt="Angel Lenyn Cari Villa" class="avatar"></div>
+          <div class="team-name">Angel Lenyn Cari Villa</div>
+          <div class="team-role">
+            Ingeniero electronico
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div style="padding:3rem 0 0;">
+      <div class="section-tag">Equipo Extendido</div>
+      <h2>Investigadores <em>asociados</em></h2>
+      <h2>!PROXIMAMENTE!</h2>
+      <!--
+      <div class="team-extended fade-in" style="margin-top:2rem;">
+        <div class="team-mini">
+          <div class="mini-avatar">MP</div>
+          <div><div class="mini-name">María Paredes</div><div class="mini-role">Investigadora — IA &amp; Teoría de Juegos</div></div>
+        </div>
+        <div class="team-mini">
+          <div class="mini-avatar">DL</div>
+          <div><div class="mini-name">Diego Lara</div><div class="mini-role">Ingeniero — Infraestructura de Modelos IA</div></div>
+        </div>
+        <div class="team-mini">
+          <div class="mini-avatar">SK</div>
+          <div><div class="mini-name">Sonia Kim</div><div class="mini-role">Investigadora Visitante — KAIST</div></div>
+        </div>
+        <div class="team-mini">
+          <div class="mini-avatar">RV</div>
+          <div><div class="mini-name">Rodrigo Vega</div><div class="mini-role">Doctorado — Agentes LLM</div></div>
+        </div>
+        <div class="team-mini">
+          <div class="mini-avatar">LN</div>
+          <div><div class="mini-name">Luisa Navarro</div><div class="mini-role">Investigadora — Privacidad &amp; IA Ética</div></div>
+        </div>
+        <div class="team-mini">
+          <div class="mini-avatar">AT</div>
+          <div><div class="mini-name">Ahmed Tarek</div><div class="mini-role">Investigador Visitante — ETH Zürich</div></div>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <!--
+  <div class="team-join fade-in">
+    <div>
+      <h3>¿Quieres unirte al<br/><em>HubChain</em>?</h3>
+      <p>Buscamos investigadores apasionados por la inteligencia artificial. Ofrecemos
+         un entorno de investigación de clase mundial en Cusco, Perú, conectado con
+         los principales hubs de IA del mundo.</p>
+    </div>
+    <button class="btn-primary" onclick="showPage('contact')">Contáctanos →</button>
+  </div>
+  -->
+  <footer>
+    <div class="footer-logo">Hub<span>Chain</span></div>
+    <p class="footer-copy">© 2026 HubChain Lab. Todos los derechos reservados.</p>
+    <ul class="footer-links">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Papers</a></li>
+      <li><a href="#">Privacidad</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+<!-- CONTACT -->
+<div id="page-contact" class="page">
+  <div class="breadcrumb">HubChain <span class="breadcrumb-sep">/</span> <span>Contacto</span></div>
+  <div class="page-header">
+    <div class="page-header-tag">Contacto</div>
+    <h1>Conéctate al <em>hub</em></h1>
+    <p>Estamos abiertos a colaboraciones académicas, industriales y de financiamiento.
+       Si tu organización trabaja en inteligencia artificial, hablemos.</p>
+  </div>
+
+  <div class="contact-layout fade-in">
+  
+    <div class="contact-left">
+      <div class="section-tag">Información de Contacto</div>
+      <h2>Estamos en <em>Cusco</em></h2>
+      <p>Estamos abiertos a colaboraciones en investigación de IA. Si tu organización
+         quiere ser parte del hub, hablemos y construyamos juntos.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:research@hubchain.ai">
+          <div class="contact-link-icon">✉</div>
+          research@hubchain.ai
+        </a>
+        <div class="contact-link">
+          <div class="contact-link-icon">◎</div>
+          Av. Innovación 1200, Piso 8, Cusco, Perú
+        </div>
+        <div class="contact-link">
+          <div class="contact-link-icon">⌖</div>
+          +51 1 234 5678
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <div class="section-tag">Unirse al hub</div>
+      <h2>Cuéntanos tu <em>propuesta</em></h2>
+      <div class="contact-form" style="margin-top:2rem;">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre"/>
+          </div>
+          <div class="form-group">
+            <label>Organización</label>
+            <input type="text" placeholder="Universidad / Empresa"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="tu@email.com"/>
+        </div>
+        <div class="form-group">
+          <label>Tipo de colaboración</label>
+          <select>
+            <option value="">Seleccionar...</option>
+            <option>Investigación conjunta en IA</option>
+            <option>Financiamiento / Grant</option>
+            <option>Transferencia de modelos IA</option>
+            <option>Consultoría en IA</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea rows="5" placeholder="Cuéntanos cómo quieres conectarte al hub..."></textarea>
+        </div>
+        <button class="form-submit">Unirse al Hub →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-map fade-in">
+    <div class="map-pin">📍</div>
+  </div>
+  
+
+  <footer>
+    <div class="footer-logo">Hub<span>Chain</span></div>
+    <p class="footer-copy">© 2026 HubChain Lab. Todos los derechos reservados.</p>
+    <!--
+    <ul class="footer-links">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Papers</a></li>
+      <li><a href="#">Privacidad</a></li>
+    </ul>
+    -->
+  </footer>
+</div>
+
+
+<script src="js/main.js"></script>
+<script src="js/video.js"></script>
+<script src="js/inicio.js"></script>
+<script src="js/logo-animation.js"></script>
+<script src="js/carrucel.js"></script>
+</body>
+</html>
